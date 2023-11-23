@@ -1,0 +1,19 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+// Nota a este primer mixin: Investigando y leyendo quería aplicar el reset de todo el contenido a 0 para más comodidad en mi página y me encuentro con que me genera problemas en la página. //
+
+@mixin center-h1() {
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 20px;
+  }
+
+@mixin sub-h2() {
+    font-size: 50px;
+	font-weight: 500;
+	margin-bottom: 5px;
+}

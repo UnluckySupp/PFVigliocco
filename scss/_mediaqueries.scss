@@ -1,0 +1,20 @@
+@media screen and (max-width:820px) {
+	section {
+		flex-direction: column-reverse;
+		>img {
+			height: 30%;
+		}
+	}
+	.contenedor-texto {
+		text-align: center;
+	}
+	.perfil {
+		flex-direction: column-reverse;
+		img {
+			max-height: 30%;
+		}
+	}
+	.recetaImg {
+		max-width: 50%;
+	}
+}

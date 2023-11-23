@@ -1,0 +1,43 @@
+.receta {
+	width: 60%;
+	margin: 20px 0 0 20px;
+
+	.recetaImg {
+		max-width: 80%;
+
+		img {
+			width: 100%;
+		}
+	}
+
+	.recetaDesc {
+		h2 {
+			font-size: 2em;
+			margin-bottom: 10px;
+			margin-top: 10px;
+		}
+
+		p {
+			font-size: 1.5em;
+			line-height: 1.5;
+		}
+
+		ul {
+			margin-bottom: 10px;
+		}
+	}
+
+	.perfilSubtitulo {
+		margin-bottom: 20px;
+	}
+
+	.perfilComentario {
+		font-size: 1.5em;
+		line-height: 1.5;
+	}
+}
+
+.subTop {
+	border-top: 1px solid black;
+	margin-top: 10px;
+}

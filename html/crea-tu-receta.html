@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recetas del Mundo - Crea tu Receta</title>
+    <!-- Descripción del Sitio Web -->
+    <meta name="description"
+        content="Subí tu receta a Recetas del Mundo. Cientos de usuarios, miles de recetas.">
+    <!-- Favicon -->
+    <link rel="icon" href="../img/icon.ico" />
+    <!-- BS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <header>
+        <!-- NAV -->
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+                <a href="../index.html">
+                    <img src="../img/logo.png" alt="Logo de la página">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="recetas.html">Recetas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="crea-tu-receta.html">Crea tu Receta</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="perfil.html">Perfil</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="iniciar-sesion.html">Iniciar Sesión</a>
+                        </li>
+                </div>
+            </div>
+        </nav>
+    </header>
+    </header>
+    <main>
+        <h1>CREA TU RECETA</h1>
+        <!-- Formulario para subir tu receta -->
+        <!-- Nota sobre el action:submit.php - He utilizado ayuda para que al finalizar la página 100% y poder conectarlo a un servidor de bases de datos, estas recetas se guarden en algún lugar para generar el blog y las tarjetas de la página. -->
+        <form action="submit.php" method="post">
+            <input type="text" name="titulo" placeholder="Título de la receta">
+            <input type="text" name="descripcion_breve" placeholder="Descripción breve" maxlength="70">
+            <textarea name="descripcion_completa" placeholder="Descripción completa de la receta" rows="8"></textarea>
+            <input type="file" name="archivo" accept="image/jpg">
+            <input type="submit" value="Subir Receta">
+        </form>
+    </main>
+    <!-- FOOTER -->
+    <footer>
+        <h3>Recetas del mundo 2023 - Todos los derechos reservados</h3>
+    </footer>
+    <!-- BS JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
